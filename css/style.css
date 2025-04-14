@@ -1,0 +1,465 @@
+/* ========================= GLOBAL STYLES ========================== */
+/* General reset and base styles for consistent layout */
+ body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Playfair Display', serif; */
+    font-family: "Roboto","poppins", serif;
+    box-sizing: border-box;
+  }
+  /* variables of colors an font */
+  :root {
+    --sp-font: "Dancing Script", serif;
+    --primary-color: #eb3477;
+    --secondary-color: #f75993;
+    --text-color:#3d3d3d;
+    --head-color: #242220;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #242220;
+  }
+  li a{
+    color: var(--text-color);
+  }
+  p{
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-size: 1.1rem;
+  }
+  h1{
+    color: var(--head-color);
+    font-size: 2.5rem;
+  }
+  h2{
+    color: var(--head-color);
+    font-size: 1.9rem;
+  }
+  h3{
+    color: var(--head-color);
+    font-size: 1.3rem;
+  }
+
+  a.position-relative {
+    position: relative;
+}
+
+a .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 3px 6px;
+    font-weight: bold;
+}
+.btns{
+  background-color: var(--primary-color);
+  color: white;
+}
+.button {
+  width: 150px;
+  height: 45px;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  color: white;
+  padding: 10px 20px; 
+}
+  .button:hover{
+    background-color: var(--secondary-color);
+    color: rgb(23, 22, 22);
+  }
+  .secbtn{
+    width: 150px;
+    height: 40px;
+    outline: 2px solid var(--primary-color);
+    background-color: transparent;
+    border-radius: 30px;
+    color: rgb(23, 22, 22);
+  }
+  .secbtn:hover{
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  .logo-text{
+    font-size: 2.5rem;
+    font-family: var(--sp-font) !important;
+    color: #f75993;
+   }
+   .input{
+    border: 2px solid var(--primary-color);
+   }
+   .color{
+    color: var(--primary-color);
+   }
+   #defaultNavbar, #scrolledNavbar {
+    transition: all 0.3s ease;
+  }
+  
+  .hidden {
+    top: -500px; /* Adjust based on your navbar height */
+  }
+/* ========================= HEADER STYLES ========================== */
+/* top ban account style */
+.acount1{
+  font-family: var(--sp-font);
+}
+.acount{
+  font-family: var(--sp-font);
+}
+.acount2{
+  display: none !important;
+}
+/* nav logo styles */
+.nav-logo{
+    width: 180px;
+    height: 180px;
+}
+.nav-logo h1{
+  font-size: 4.5rem;
+}
+
+/* Mega Menu Styling */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+}
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.col-md-10 .pt-2 .logo-text{
+  font-size: 8rem;
+  font-family: var(--sp-font) !important;
+  color: #b38b00;
+ }
+  /* Style for search input */
+
+  /* ========================= Hero STYLES ========================== */
+ /* Custom CSS */
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero-section p {
+  margin-bottom: 30px;
+}
+
+.hero-section .btn-custom {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+.hero-section .btn-primary-custom {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.hero-section .btn-secondary-custom {
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #000;
+}
+
+ .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+ .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 600px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* hero cursor animation */
+.cursor{
+  position: relative;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+}
+/* Animation */
+.typewriter-animation {
+animation: 
+  typewriter 5s steps(50) 1s 1 normal both, 
+  blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+from { width: 0; }
+to { width: 100%; }
+}
+@keyframes blinkingCursor{
+from { border-right-color: rgba(255,255,255,.75); }
+to { border-right-color: transparent; }
+}
+
+  /* ========================= testimonials STYLES ========================== */
+  /* Swiper Styles */
+.swiper {
+  width: 100%;
+  height: 550px; /
+}
+
+.swiper-slide {
+  width: 100%;
+  max-width: 780px;
+  height: 100%;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Testimonial Card Styles */
+.testimonial-card {
+  background-color: #f0a1cc;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+}
+
+.testimonial-img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+.testimonial-role {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.5;
+  font-style: italic;
+  margin-top: 15px;
+  flex-grow: 1;
+}
+
+/* ========================= About Us STYLES ========================== */
+.about-us {
+  background: linear-gradient(135deg, #f9f9f9, #ffffff) !important;
+}
+
+.about-us h1 {
+  color: #333;
+}
+
+.p {
+  color: var(--text-color);
+}
+
+.our-values .card {
+  transition: transform 0.3s ease;
+}
+
+.our-values .card:hover {
+  transform: translateY(-10px);
+}
+
+/* ========================= contact Us STYLES ========================== */
+
+/* Custom Styles for Contact Page */
+.contact-us {
+  padding: 60px 0;
+}
+
+.contact-us .card {
+  border: none;
+  border-radius: 10px;
+}
+
+.contact-us .form-control {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.contact-us .btn-primary {
+  background-color: #6c5ce7;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-us .btn-primary:hover {
+  background-color: #4b3d8f;
+}
+
+.contact-info .card {
+  transition: transform 0.3s ease;
+}
+
+.contact-info .card:hover {
+  transform: translateY(-10px);
+}
+
+/* ========================= blog STYLES ========================== */
+/* Custom Styles for Blog Page */
+.blog {
+  padding: 60px 0;
+}
+
+.blog .card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.blog .card:hover {
+  transform: translateY(-10px);
+}
+
+.blog .card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.blog .card-body {
+  padding: 20px;
+}
+
+.blog .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.blog .card-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.blog .btn-primary {
+  background-color: #6c5ce7;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.blog .btn-primary:hover {
+  background-color: #4b3d8f;
+}
+
+
+/* ========================= cartSTYLES ========================== */
+
+.cart-wrapper {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-2px);
+}
+
+.quantity-input {
+  width: 60px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+}
+
+.product-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.summary-card {
+  background: white;
+  border-radius: 12px;
+  position: sticky;
+  top: 20px;
+}
+
+.checkout-btn {
+  border: none;
+  transition: transform 0.2s;
+}
+
+.checkout-btn:hover {
+  transform: translateY(-2px);
+}
+
+.remove-btn {
+  color: #dc2626;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.remove-btn:hover {
+  color: #991b1b;
+}
+
+.quantity-btn {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: #f3f4f6;
+  border: none;
+  transition: all 0.2s;
+}
+
+.quantity-btn:hover {
+  background: #e5e7eb;
+}
+
+.discount-badge {
+  background: #dcfce7;
+  color: #166534;
+  font-size: 0.875rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+}

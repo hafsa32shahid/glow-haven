@@ -1,0 +1,71 @@
+
+/* Extra Small Devices (Mobile Phones - Portrait) */
+@media (max-width: 575.98px) {
+  .testimonial-card {
+    padding: 10px;
+  }
+  .testimonial-name {
+    font-size: 1.2rem;
+  }
+
+  /* testimonials responsive */
+}
+
+@media (max-width: 575.98px) {
+  .logo-text{
+    font-size: 4rem !important;
+   }
+   .media-ban{
+    display: none !important;
+}
+/* top ban account */
+.acount1{
+  display: none !important;
+}
+ /* sidebar media links */
+ .media-links .nav-item .nav-link{
+  color: #eb3477;
+ }
+}
+
+/* Small Devices (Mobile Phones - Landscape) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+ 
+  .logo-text{
+    font-size: 4rem !important;
+   }
+   .navbar .nav-logo{
+    width: 100px;
+    height: 100px;
+}
+/* testimonials responsive */
+.swiper-slide {
+  max-width: 95%;
+}
+ /* sidebar media links */
+ .media-links .nav-item .nav-link{
+  color: #eb3477;
+ }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* sidebar media links */
+ .media-links .nav-item .nav-link{
+  color: #eb3477;
+ }
+}
+
+/* Large Devices (Desktops and Laptops) */
+@media (min-width: 992px) {
+  .swiper-slide {
+    max-width: 90%; /* Set to 90% width on medium screens */
+  }
+
+}
+@media (max-width: 1150px) {
+   /* nav menu */
+   .txt-nav{
+    font-size: 0.7rem !important;
+  }
+}
